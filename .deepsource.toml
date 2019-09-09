@@ -1,0 +1,19 @@
+version = 1
+
+exclude_patterns = [
+  'docs/**',
+  'examples/**',
+  'extra/**'
+]
+
+test_patterns = [
+  't/**'
+]
+
+[[analyzers]]
+name = "python"
+enabled = true
+
+  [analyzers.meta]
+  max_line_length = 100
+  skip_doc_coverage = ["module", "magic", "class"]
